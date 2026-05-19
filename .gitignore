@@ -16,3 +16,6 @@ dist/
 .typst/
 *.pdf
 !template/figures/*.pdf
+
+
+/src
