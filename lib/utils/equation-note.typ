@@ -6,7 +6,7 @@
     if english-writing-state.get() {
       [where ]
     } else {
-      [式中，]
+      []
     }
   } else {
     prefix
