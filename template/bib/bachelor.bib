@@ -7,13 +7,6 @@
   year      = {2018}
 }
 
-@inproceedings{feng2024embarrassingly,
-  author    = {Yunzhen Feng and Ramakrishna Vedantam and Julia Kempe},
-  title     = {Embarrassingly Simple Dataset Distillation},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2024}
-}
-
 @inproceedings{yu2024teddy,
   author    = {Ruonan Yu and Songhua Liu and Jingwen Ye and Xinchao Wang},
   title     = {Teddy: Efficient Large-Scale Dataset Distillation via Taylor-Approximated Matching},
@@ -26,7 +19,7 @@
   author    = {Bo Zhao and Konda Reddy Mopuri and Hakan Bilen},
   title     = {Dataset Condensation with Gradient Matching},
   booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2021}
+  year      = {2021},
 }
 
 @inproceedings{cazenavette2022dataset,
@@ -61,22 +54,22 @@
   pages     = {17051-17061}
 }
 
-@inproceedings{zhang2024m3d,
-  author    = {Hansong Zhang and Shikun Li and Peng Wang and Dan Zeng and Shiming Ge},
-  title     = {M3D: Dataset Condensation by Minimizing Maximum Mean Discrepancy},
-  booktitle = {AAAI Conference on Artificial Intelligence (AAAI)},
-  year      = {2024},
-  volume    = {38},
-  number    = {8},
-  pages     = {9314-9322}
+@inproceedings{chan2025mgd3,
+  title     = {{MGD³}: Mode-Guided Dataset Distillation using Diffusion Models},
+  author    = {Chan Santiago, Jeffrey A. and Tirupattur, Praveen and Nayak, Gaurav Kumar and Liu, Gaowen and Shah, Mubarak},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  volume    = {267},
+  pages     = {52861-52876},
 }
 
-@article{yin2023sre2l,
+@inproceedings{yin2023sre2l,
   author    = {Zeyuan Yin and Eric P. Xing and Zhiqiang Shen},
   title     = {Squeeze, Recover and Relabel: Dataset Condensation at ImageNet Scale From A New Perspective},
-  journal   = {Advances in Neural Information Processing Systems (NeurIPS)},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2023},
-  volume    = {36}
+  volume    = {36},
+  pages = {73582-73603}
 }
 
 @article{zhou2024selfsupervised,
@@ -99,7 +92,8 @@
   title     = {Elucidating the Design Space of Dataset Condensation},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2024},
-  volume    = {37}
+  volume    = {37},
+  pages = {99161-99201},
 }
 
 @inproceedings{su2024d4m,
@@ -124,12 +118,23 @@
   year      = {2022}
 }
 
+@inproceedings{ronneberger2015unet,
+  author    = {Olaf Ronneberger and Philipp Fischer and Thomas Brox},
+  title     = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  series    = {LNCS},
+  volume    = {9351},
+  pages     = {234-241},
+  year      = {2015},
+}
+
 @inproceedings{ho2020denoising,
   author    = {Jonathan Ho and Ajay Jain and Pieter Abbeel},
   title     = {Denoising Diffusion Probabilistic Models},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2020},
-  volume    = {33}
+  volume    = {33},
+  pages = {6840-6851}
 }
 
 @inproceedings{rombach2022high,
@@ -151,9 +156,108 @@
     title={MedMNIST v2-A large-scale lightweight benchmark for 2D and 3D biomedical image classification},
     author={Yang, Jiancheng and Shi, Rui and Wei, Donglai and Liu, Zequan and Zhao, Lin and Ke, Bilian and Pfister, Hanspeter and Ni, Bingbing},
     journal={Scientific Data},
+    year={2023},
     volume={10},
     number={1},
     pages={41},
-    year={2023},
-    publisher={Nature Publishing Group UK London}
+}
+
+@inproceedings{tan2026ddqo,
+  title     = {Dataset Distillation as Pushforward Optimal Quantization},
+  author    = {Tan, Hong Ye and Slade, Emma},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+}
+
+% ===== 以下为新增文献 =====
+
+% ResNet - 文中提到但无引用
+@inproceedings{he2016deep,
+  author    = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2016},
+  pages     = {770-778},
+}
+
+% Vision Transformer - 第1章提到
+@inproceedings{dosovitskiy2021image,
+  author    = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+  title     = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2021},
+}
+
+% ImageNet ILSVRC - 第1章提到
+@article{russakovsky2015imagenet,
+  author    = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+  title     = {ImageNet Large Scale Visual Recognition Challenge},
+  journal   = {International Journal of Computer Vision (IJCV)},
+  year      = {2015},
+  volume    = {115},
+  number    = {3},
+  pages     = {211-252},
+}
+
+% FTD (Flat Trajectory Distillation) - 第2章轨迹匹配中提到
+@inproceedings{du2023minimizing,
+  author    = {Jiawei Du and Yidi Jiang and Vincent Y. F. Tan and Joey Tianyi Zhou and Haizhou Li},
+  title     = {Minimizing the Accumulated Trajectory Error to Improve Dataset Distillation},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2023},
+  pages     = {3529-3538},
+}
+
+% TESLA (Scaling Up Dataset Distillation to ImageNet-1K) - 第2章轨迹匹配中提到
+@inproceedings{cui2023scaling,
+  author    = {Justin Cui and Ruochen Wang and Si Si and Cho-Jui Hsieh},
+  title     = {Scaling Up Dataset Distillation to ImageNet-1K with Constant Memory},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2023},
+  volume    = {202},
+  pages     = {6565-6590},
+}
+
+% CAFE - 第2章分布匹配中提到
+@inproceedings{wang2022cafe,
+  author    = {Kai Wang and Bo Zhao and Xiangyu Peng and Zheng Zhu and Shuo Yang and Shuo Wang and Guan Huang and Hakan Bilen and Xinchao Wang and Yang You},
+  title     = {CAFE: Learning to Condense Dataset by Aligning Features},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2022},
+  pages     = {12186-12195},
+}
+
+% AdamW - 优化器引用
+@inproceedings{loshchilov2019decoupled,
+  author    = {Ilya Loshchilov and Frank Hutter},
+  title     = {Decoupled Weight Decay Regularization},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2019},
+}
+
+% SGDR (Cosine Annealing) - 余弦学习率调度
+@inproceedings{loshchilov2017sgdr,
+  author    = {Ilya Loshchilov and Frank Hutter},
+  title     = {SGDR: Stochastic Gradient Descent with Warm Restarts},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2017},
+}
+
+% MiniBatchKMeans (Sculley 2010)
+@inproceedings{sculley2010web,
+  author    = {D. Sculley},
+  title     = {Web-Scale K-Means Clustering},
+  booktitle = {Proceedings of the 19th International Conference on World Wide Web (WWW)},
+  year      = {2010},
+  pages     = {1177-1178},
+}
+
+% AlexNet - CNN在ImageNet取得突破的原始论文
+@inproceedings{krizhevsky2012imagenet,
+  author    = {Alex Krizhevsky and Ilya Sutskever and Geoffrey E. Hinton},
+  title     = {ImageNet Classification with Deep Convolutional Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2012},
+  volume    = {25},
+  pages     = {1097-1105},
 }

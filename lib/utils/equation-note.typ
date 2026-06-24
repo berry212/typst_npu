@@ -14,7 +14,7 @@
 
   block(width: 100%)[
     #set par(first-line-indent: 0pt, justify: false)
-    #set text(size: 字号.五号)
+    #set text(size: 字号.小四)
     #if resolved-prefix != none [#resolved-prefix]
     #body
   ]

@@ -1,7 +1,7 @@
 #import "layouts/doc.typ": doc
 #import "utils/algorithm.typ": algorithm, algorithm-ref, indent, no-number, pseudocode-list, with-english-writing
 #import "utils/equation-note.typ": equation-note
-#import "layouts/mainmatter.typ": mainmatter, frontmatter
+#import "layouts/mainmatter.typ": frontmatter, mainmatter
 #import "layouts/appendix.typ": appendix as appendix-layout
 #import "pages/bachelor-cover.typ": bachelor-cover
 #import "pages/graduate-cover.typ": master-cover
@@ -128,7 +128,7 @@
     )
   }
 
-  show: init-gb7714.with(read(bibliography), style: "numeric", version: "2015")
+  show: init-gb7714.with(read(bibliography), style: "numeric", version: "2025")
 
   // 3. mainmatter 包裹所有后续内容（前置 + 正文 + 后置）
   show: mainmatter.with(
@@ -137,7 +137,9 @@
     english-writing: english-writing,
     leading: if graduate { body-format.graduate.leading } else { body-format.bachelor.leading },
     spacing: if graduate { body-format.graduate.spacing } else { body-format.bachelor.spacing },
-    first-line-indent: if graduate { body-format.graduate.first-line-indent } else { body-format.bachelor.first-line-indent },
+    first-line-indent: if graduate { body-format.graduate.first-line-indent } else {
+      body-format.bachelor.first-line-indent
+    },
     heading-numbering: (..nums) => {
       let nums = nums.pos()
       if nums.len() == 1 {

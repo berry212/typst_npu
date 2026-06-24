@@ -102,7 +102,7 @@
       bachelor-header-render()
     }
   })
-  
+
   // cap-able 全局样式（共享参数）
   show: cap-style.with(
     numbering-format: "1-1",
@@ -126,7 +126,6 @@
     show-subcaption-label: true,
     label-style: "(a)",
   )
-
   it
 }
 
